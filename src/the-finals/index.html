@@ -33,8 +33,9 @@
       <% json.the_finals_gallery['images'].forEach(function(img) { %>
         <div class="img <%= img.Size %>">
           <img src="http://ww2.hdnux.com/photos/61/64/55/<%= img.Wcm_id %>/5/2000x0.jpg">
-          <div class="caption"><%= img.Caption %> <span class="byline"> <%= img.Photographer %></span></div>
+          <div class="byline"> <%= img.Photographer %></div>
         </div>
+        <div class="caption"><%= img.Caption %></div>
 
      <% }); %>
 

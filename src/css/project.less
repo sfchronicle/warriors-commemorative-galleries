@@ -42,22 +42,38 @@
 }
 
 .caption{
-	margin:0;
+  max-width: 900px;
+	margin:0 auto;
 	font-size:18px;
 	font-family:@med-graphics;
 	padding-top: 10px;
+  text-align: center;
+  @media @tablet {
+    width: 80%;
+  }
 	@media @mobile {
-		font-size: 16px;
+    width: 100%;
+    padding: 15px 10px 0px 10px;
+    text-align: left;
+		font-size: 15px;
 	}
 }
 .vertical{
 	max-width:500px;
 }
+.byline {
+  font-family: @block-graphics;
+  font-size: 14px;
+  padding-left: 10px;
+  @media @mobile {
+    font-size: 13px;
+  }
+}
 
 .img{
-	margin: 4em auto;
+	margin: 5em auto 1em auto;
 	@media @mobile {
-		margin: 3em auto;
+		margin: 3em auto 0 auto;
 	}
 }
 
