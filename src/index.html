@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title><%= json.project.seo_title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="__sync_contentCategory" content="meterA">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <%= !json.project.embedded ? t.include("partials/_paywall.html") : t.include("partials/_embedframe.html") %>
+
+    <%= t.include("partials/_head.html") %>
+
+  </head>
+
+  <%= !json.project.embedded ? "<body>" : "<body is='responsive-body'>" %>
+
+
+  <!-- <div class="header">
+    <img src="http://ww4.hdnux.com/photos/61/56/74/13037335/3/1536x1536.jpg" class="header_image">
+    <div class="headertext">
+      <h1 class="headline">The future of health</h1>
+      <h3 class="deck">Someday soon, technology will keep you out
+of the hospital</h3>
+    </div>
+  </div> -->
+
+  <% var data = json.landing_page %>
+  <div class="container">
+
+    <h1><%= data.Headline %></h1>
+    <div class="date"><%= data.Date %></div>
+    <div class="deck"><%= data.Deck %></div>
+
+  </div>
+
+  <% json.landing_page['links'].forEach(function(t) { %>
+    <div class="event">
+      <h2><%= t.Title %></h2>
+
+      <% if (t.Link) { %>
+          <div class="btn"><a href="<%= t.Link %>"><span class="readmore">Read more</span></a></div>
+        <% } %>
+    </div>
+
+  <% }); %>
+
+
+
+
+
+    <script src="app.js" async></script>
+    <%= t.include("partials/_helloSFC.html") %>
+
+  </body>
+</html>
