@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
 
     <%= !json.project.embedded ? t.include("partials/_paywall.html") : t.include("partials/_embedframe.html") %>
-
+    <%= t.include("partials/_analytics-season.html") %>
     <%= t.include("partials/_head_the_season.html") %>
 
   </head>
