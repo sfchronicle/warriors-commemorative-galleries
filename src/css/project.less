@@ -1,7 +1,5 @@
 @warriors-blue: #006BB6;
 
-
-
 .container {
 	text-align: center;
 	.flex-wrap(wrap);
@@ -22,13 +20,12 @@
 
 .container.mainbar {
 	margin: auto 0;
+	padding-top: 1em;
 
 	img {
 		width: 100%;
 	}
 }
-
-
 
 .inline-img {
 	width: 100%;
@@ -57,25 +54,26 @@
 	.flex(0 0 33%);
 	margin: 0;
 
+	@media @tablet {
+		.flex(0 0 50%);
+	}
 	@media @mobile {
 		.flex(0 0 100%);
 	}
 
-	@media @tablet {
-		.flex(0 0 50%);
-	}
 }
 
 .inline-img.mainbar {
 	max-width: 900px;
 
+	@media @tablet {
+		.flex(0 0 50%);
+	}
+
 	@media @mobile {
 		.flex(0 0 100%);
 	}
 
-	@media @tablet {
-		.flex(0 0 50%);
-	}
 }
 
 .inline-img.stories {
@@ -85,13 +83,13 @@
 .inline-img.profiles {
 	.flex(0 0 25%);
 	text-align: center;
-
-	@media @mobile {
-		.flex(0 0 100%);
-	}
 	@media @tablet {
 		.flex(0 0 50%);
 	}
+	@media @mobile {
+		.flex(0 0 100%);
+	}
+
 }
 
 .linkcollection-hed {
