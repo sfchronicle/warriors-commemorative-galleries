@@ -16,6 +16,8 @@
 
   <%= !json.project.embedded ? "<body>" : "<body is='responsive-body'>" %>
 
+  <%= t.include("partials/_nav.html") %>
+
   <% var data = json.landing_page %>
   <div class="header-landing">
     <img src="http://ww4.hdnux.com/photos/61/56/74/13098353/3/1536x1536.jpg" class="header_image">
@@ -56,6 +58,7 @@
   <% }); %>
   </div>
 
+  <%= t.include("partials/_credits.html") %>
   <%= t.include("partials/_footer.html") %>
 
     <script src="app.js" async></script>
