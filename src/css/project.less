@@ -1,12 +1,10 @@
+@warriors-blue: #006BB6;
 
-
-.container {
+.container-landing {
 	margin-top: .5em;
 	text-align: center;
 	.flex-wrap(wrap);
 	.display-flex;
-
-
 }
 
 .inline-img-jackie {
@@ -36,53 +34,107 @@
 	.btn {
 		font-family: @block-graphics;
 		font-size: 16px;
+    // border: 2px solid @warriors-blue;
+    // padding: 2px 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    // a {
+    //   color: white;
+    // }
+  }
+}
+.linkcollection-hed {
+  font-family: @med-graphics;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+  border-bottom: 2px solid @warriors-blue;
+  width: 60%;
+  margin: auto;
+  color: @warriors-blue;
+}
+
+.container{
+	img{
+		width:100%;
 	}
 }
 
-.header{
-
+.header-landing{
+  margin: auto 0;
 	text-align:center;
 	// max-width:800px;
-	padding:0 10px;
-	margin:0 auto;
+
 	img {
 		width: 100%;
 		margin-bottom: 1em;
 	}
+  h1 {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size:90px;
+    font-family: @bold-graphics;
+    line-height:1;
+    text-transform:uppercase;
+    letter-spacing:3px;
+  }
+  .date {
+    font-family: @block-graphics;
+    margin-bottom: 10px;
+  }
 
+}
+
+.fa {
+  padding-left: 5px;
+}
+
+.header {
+  padding:0 10px;
+  margin:3em auto 0;
+  text-align: center;
+  font-family: @block-graphics;
 	@media @mobile {
 		margin: 3em auto 0;
 	}
+  .author {
+    padding-top: 20px;
+  }
+  .date {
+    padding-top: 5px;
+  }
 
 	h1{
 		margin: 0 auto;
-		padding-bottom: 20px;
-		font-size:90px;
-		font-family: @bold-graphics;
-		line-height:1;
-		text-transform:uppercase;
-		letter-spacing:3px;
-
+		font-size:80px;
+    font-family: @med-graphics;
+    color: @warriors-blue;
+    line-height:1;
+    text-transform:uppercase;
+    letter-spacing:3px;
 		@media @tablet{
 			font-size:50px;
-		}
-	}
-
-
-	.deck{
-		font-family:@med-graphics;
-		font-size: 24px;
-		padding-top: 1em;
-
-		@media @tablet{
-			font-size:18px;
-			line-height:1.2;
 		}
 	}
 
 	.date{
 		margin-bottom:0;
 	}
+}
+.round-head {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  font-family: @bold-graphics;
+  color: @warriors-blue;
+  border-bottom: 2px solid @warriors-blue;
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  &.round1 {
+    padding-top: 50px;
+  }
 }
 
 .caption{
@@ -123,4 +175,40 @@
 
 a {
 	cursor: pointer;
+  color: @warriors-blue;
+}
+
+.divider {
+  border: 1px solid @light-gray;
+  height: 1px;
+  width: 80%;
+  margin:auto;
+  margin-top: 100px;
+}
+
+.credit-container {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 15px;
+  font-family: @block-graphics;
+}
+.bold-class {
+  font-family: @med-graphics;
+  padding-bottom: 5px;
+}
+.cred {
+  padding-top: 15px;
+}
+
+.deck{
+  font-family:@med-graphics;
+  font-size: 22px;
+  padding-top: 1em;
+  max-width: 900px;
+  margin: auto;
+
+  @media @tablet{
+    font-size:18px;
+    // line-height:1.5;
+  }
 }

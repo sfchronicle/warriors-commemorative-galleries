@@ -30,6 +30,11 @@
       </div>
 
       <% json.the_playoffs_gallery['images'].forEach(function(img) { %>
+        <% if (img.Round) {%>
+          <% console.log(img.Round); %>
+
+          <div class="round-head round<%=img.Round%>">Round <%=img.Round%></div>
+        <% } %>
         <div class="img <%= img.Size %>">
           <img src="http://ww2.hdnux.com/photos/61/64/55/<%= img.Wcm_id %>/5/2000x0.jpg">
           <div class="byline"> <%= img.Photographer %></div>
@@ -40,6 +45,7 @@
 
     </div>
 
+    <%= t.include("partials/_credits.html") %>
     <%= t.include("partials/_footer.html") %>
 
     <script src="../app.js" async></script>
