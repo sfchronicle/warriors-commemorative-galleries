@@ -27,7 +27,7 @@ of the hospital</h3>
   </div> -->
 
   <% var data = json.landing_page %>
-  <div class="header">
+  <div class="header-landing">
     <img src="http://ww4.hdnux.com/photos/61/56/74/13098353/3/1536x1536.jpg" class="header_image">
 
     <h1><%= data.Headline %></h1>
@@ -36,7 +36,7 @@ of the hospital</h3>
 
   </div>
 
-  <div class="container">
+  <div class="container-landing">
   <% json.landing_page['links'].forEach(function(t) { %>
     <div class="inline-img-jackie">
       <a href="<%=t.Link%>" target="_parent"><img src="http://ww4.hdnux.com/photos/61/50/16/<%=t.Wcm_id%>/3/premium_landscape.jpg"></img></a>
