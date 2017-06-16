@@ -1,16 +1,18 @@
 @warriors-blue: #006BB6;
 
-.container-landing {
-	margin-top: .5em;
-	text-align: center;
+.container {
 	.flex-wrap(wrap);
 	.display-flex;
 }
 
-.inline-img-jackie {
-	padding-left: -10px;
-	padding-right: -10px;
-	.flex(0 0 33%);
+.container.gallery {
+	margin-top: .5em;
+	text-align: center;
+	.justify-content(center);
+}
+
+
+.inline-img {
 
 	@media @tablet {
 		.flex(0 0 50%);
@@ -44,6 +46,21 @@
     // }
   }
 }
+
+.inline-img.gallery {
+	.justify-content(center);
+	.flex(0 0 33%);
+}
+
+.inline-img.stories {
+	.flex(0 0 25%);
+}
+
+.inline-img.profiles {
+	.flex(0 0 20%);
+}
+
+
 .linkcollection-hed {
   font-family: @med-graphics;
   text-align: center;
