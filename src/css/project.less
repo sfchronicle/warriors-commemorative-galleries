@@ -1,4 +1,5 @@
 @warriors-blue: #006BB6;
+@gold: #FFDF00;
 
 .container {
 	text-align: center;
@@ -114,36 +115,54 @@
 	}
 
   	.date {
-    	font-family: @block-graphics;
-    	margin-bottom: 10px;
+    	font-family: @med-graphics;
+    	margin-bottom: 0;
+
+    	@media @mobile{
+    	 font-size:14px;
+    	}
   	}
 }
 
-h1.headline {
-	top: 13%;
+.header-deck{
 	position: absolute;
-	z-index: 5;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    font-size:110px;
-    font-family: @bold-graphics;
-    line-height:1;
-    text-transform:uppercase;
-    letter-spacing:3px;
-    color: white;
+  top: 80px;
+  left: 0;
+  color:#fff;
+  text-shadow:2px 2px 2px #333;
+  right: 0;
+  padding:0 10px;
+
+  @media @width700 {
+		position:static;
+		text-shadow:none;
+		color:#000;
+	}
+}
+
+h1.headline {
+	
+  margin: 0 auto;
+  padding-bottom: 10px;
+  font-size:110px;
+  font-family: @body-bold;
+  line-height:1;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  color: @gold;
 	text-align: center;
 	width: 100%;
 
-	@media @tablet {
+	@media @width900 {
 		font-size: 90px;
 	}
 
-	@media @mobile {
-		position: static;
-		color: black;
-		font-size: 50px;
+	@media @width700 {
+		font-size: 40px;
 	}
-  }
+
+
+}
 
 
 .headerimg {
@@ -267,12 +286,11 @@ a {
 .deck{
   font-family:@med-graphics;
   font-size: 22px;
-  padding-top: 1em;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
 
   @media @tablet{
-    font-size:18px;
-    // line-height:1.5;
+    font-size:16px;
+    line-height:1.5;
   }
 }

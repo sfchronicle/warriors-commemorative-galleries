@@ -19,12 +19,19 @@
   <%= t.include("partials/_nav.html") %>
 
   <% var data = json.landing_page %>
-  <div class="header-landing">
-    <div class="headerimg"><img src="http://ww4.hdnux.com/photos/61/76/43/13101275/3/1536x1536.jpg" class="header_image"></div>
 
-    <h1 class="headline"><%= data.Headline %></h1>
-    <div class="date"><%= data.Date %></div>
-    <div class="deck"><%= data.Deck %></div>
+
+  <div class="header-landing">
+    <div class="headerimg">
+      <img src="http://ww4.hdnux.com/photos/61/76/43/13101275/3/1536x1536.jpg" class="header_image">
+      <div class="header-deck">
+      <h1 class="headline"><%= data.Headline %></h1>
+      <div class="date"><%= data.Date %></div>
+      <div class="deck"><%= data.Deck %></div>
+    </div>
+    </div>
+
+    
 
   </div>
 
