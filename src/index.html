@@ -16,16 +16,6 @@
 
   <%= !json.project.embedded ? "<body>" : "<body is='responsive-body'>" %>
 
-
-  <!-- <div class="header">
-    <img src="http://ww4.hdnux.com/photos/61/56/74/13037335/3/1536x1536.jpg" class="header_image">
-    <div class="headertext">
-      <h1 class="headline">The future of health</h1>
-      <h3 class="deck">Someday soon, technology will keep you out
-of the hospital</h3>
-    </div>
-  </div> -->
-
   <% var data = json.landing_page %>
   <div class="header-landing">
     <img src="http://ww4.hdnux.com/photos/61/56/74/13098353/3/1536x1536.jpg" class="header_image">
@@ -50,9 +40,7 @@ of the hospital</h3>
   <% }); %>
   </div>
 
-
-
-
+  <%= t.include("partials/_footer.html") %>
 
     <script src="app.js" async></script>
     <%= t.include("partials/_helloSFC.html") %>
