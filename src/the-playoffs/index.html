@@ -31,8 +31,6 @@
 
       <% json.the_playoffs_gallery['images'].forEach(function(img) { %>
         <% if (img.Round) {%>
-          <% console.log(img.Round); %>
-
           <div class="round-head round<%=img.Round%>">Round <%=img.Round%></div>
         <% } %>
         <div class="img <%= img.Size %>">
@@ -45,7 +43,6 @@
 
     </div>
 
-    <%= t.include("partials/_credits.html") %>
     <%= t.include("partials/_footer.html") %>
 
     <script src="../app.js" async></script>
